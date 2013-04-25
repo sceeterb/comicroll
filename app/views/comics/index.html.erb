@@ -1,0 +1,9 @@
+<div class="comics">
+  <% if @comics.any? %>
+    <% @comics.each do |comic| %>
+      <div class="comic">
+        <img src="<%= comic.image_url %>" />
+      </div>
+    <% end %>
+  <% end %>
+</div>
